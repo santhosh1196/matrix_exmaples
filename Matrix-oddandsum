@@ -1,0 +1,10 @@
+n,m = list(map(int,input().split()))
+r=[]
+c=[]
+for i in range(n):
+    r.append(list(map(int,input().split())))
+for i in range(n):
+    for j in range(m):
+        if (i+j)%2==0:
+            c.append(r[i][j])
+sum(c)
